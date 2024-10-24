@@ -1,32 +1,103 @@
-*{
+head,
+body{
+    width: 100%;
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+}
+.body{
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 147px;
+}
+.page-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(222, 222, 222, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 100;
 }
 
+.page-header__container{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
+}
+.page-header__logo{
+    flex-shrink: 0;
+    width: 202px;
+    height: 147px;
+    font-size: 0;
+    text-decoration: none;
+}
+.page-header__logo-icon{
+    width: 100%;
+    height: 100%;
+}
+.page-header__nav{
+display: flex;
+align-items: baseline;
+margin: 0 auto;
+}
+.page-header__nav-link{
+    margin:0 25px;
+    color: #1f1e1e;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.page-header__nav-link:hover{
+    color: #bc3324;
+}
 
-
-h1{
-    text-decoration: dotted;
-    color: red;
+.btn{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid rgba(31, 30, 30, 1);
+    border-radius: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color:#1F1E1E;
+    font-family: "Open Sans", sans-serif;
+    transition: color 0.2s, background-color 0.2s,border-color 0.2s ;
+    overflow: hidden;
+    cursor: pointer;
 }
-h2{
-    color: green;
-
+.btn:hover{
+    background-color: #1F1E1E;
+    color: #ffffff;
 }
-h3{
-    color: aqua;
+.main{
+    flex: 1 0 auto;
+    background-color: aquamarine;
 }
-h4{
-    color: darkgreen;
-}
-h5{
-    color: brown;
-}
-h6{
-    color: dimgrey;
-    font-size: 20px;
-}
-.Zagolowki{
-    border: 1000px;
+.page-footer{
+    flex: 0 0 auto;
+    background-color: blueviolet;
 }
